@@ -57,6 +57,7 @@ const array_even = (lower_limit,upper_limit)=>{
     return(i_array);
 }
 //console.log(array_even(100));
+array_two = array_even();
 console.log(array_even());
 
 /////////////////////////////////////////////////////////////Third Excersice///////////////////////////////////////////////////////////////////////////////////
@@ -80,7 +81,7 @@ const array_odd = (lower_limit,upper_limit)=>{
 }
 
 console.log(array_odd());
-
+array_two = array_odd();
 ///////////////////////////////////////////////////////////Forth Excercise///////////////////////////////////////////////////////////////////////////////////////
 
 const prime_finder = (lower_limit, array_size) => {
@@ -108,6 +109,7 @@ const prime_finder = (lower_limit, array_size) => {
     }
     return(prime_array);
 }
+array_prime = prime_finder();
 console.log(prime_finder());
 
 /////////////////////////////////////////////////////////Fifth Excercise/////////////////////////////////////////////////////////////////////////////////////////////
@@ -136,6 +138,13 @@ const first_sum = array_one.reduce(reducer);
 console.log(first_sum);
 
 ////////////////////////////////////////////////////////////Seventh Excercise//////////////////////////////////////////////////////////////////////////////////////////
+const array_two_prime = [];
+for(let i = 0; i<array_prime.length;i++){
+    if(array_two.includes(array_prime[i])){
+        array_two_prime.push(array_prime[i]);
+    }
+}
+console.log(array_two_prime);
 
 
 
