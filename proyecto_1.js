@@ -116,7 +116,7 @@ console.log(prime_finder());
 const num_array = [1,1];
 const fib_gen = (array_size) =>{
     if(array_size === undefined){
-        array_size = 100;
+        array_size = 50;
     }
     for(let i = 1; num_array.length<array_size;i++){
         if(num_array[i] >= Number.MAX_SAFE_INTEGER){
@@ -130,7 +130,7 @@ const fib_gen = (array_size) =>{
     return(num_array);
 }
 console.log(fib_gen());
-const array_fib = (fib_gen());
+const array_fib = fib_gen();
 
 /////////////////////////////////////////////////////////////Sixth Excercise////////////////////////////////////////////////////////////////////////////////////////
 
@@ -175,13 +175,16 @@ array_prime.forEach(element =>{
     }
 });
 
-/*array_fib.forEach(element => {
+array_fib.forEach(element => {
     if(element % 2 != 0){
         array_odd_two.push(element);
     }
-});*/
+});
 
 console.log(array_odd_two);
+
+/////////////////////////////////////////////////////////////Ninth Excercise//////////////////////////////////////////////////////////////////////////////
+
 
 
 
