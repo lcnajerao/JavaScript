@@ -81,7 +81,7 @@ const array_odd = (lower_limit,upper_limit)=>{
 }
 
 console.log(array_odd());
-array_two = array_odd();
+array_three = array_odd();
 ///////////////////////////////////////////////////////////Forth Excercise///////////////////////////////////////////////////////////////////////////////////////
 
 const prime_finder = (lower_limit, array_size) => {
@@ -130,6 +130,7 @@ const fib_gen = (array_size) =>{
     return(num_array);
 }
 console.log(fib_gen());
+const array_fib = (fib_gen());
 
 /////////////////////////////////////////////////////////////Sixth Excercise////////////////////////////////////////////////////////////////////////////////////////
 
@@ -138,13 +139,49 @@ const first_sum = array_one.reduce(reducer);
 console.log(first_sum);
 
 ////////////////////////////////////////////////////////////Seventh Excercise//////////////////////////////////////////////////////////////////////////////////////////
+
 const array_two_prime = [];
 for(let i = 0; i<array_prime.length;i++){
-    if(array_two.includes(array_prime[i])){
+    if(array_three.includes(array_prime[i])){
         array_two_prime.push(array_prime[i]);
     }
 }
 console.log(array_two_prime);
+
+/////////////////////////////////////////////////////////////Eighth Excercise///////////////////////////////////////////////////////////////////////////////////////////
+const array_odd_two = [];
+
+array_one.forEach(element =>{
+    if(element % 2 != 0){
+        array_odd_two.push(element);
+    }
+});
+
+array_two.forEach(element =>{
+    if(element % 2 != 0){
+        array_odd_two.push(element);
+    }
+});
+
+array_three.forEach(element =>{
+    if(element % 2 != 0){
+        array_odd_two.push(element);
+    }
+});
+
+array_prime.forEach(element =>{
+    if(element % 2 != 0){
+        array_odd_two.push(element);
+    }
+});
+
+/*array_fib.forEach(element => {
+    if(element % 2 != 0){
+        array_odd_two.push(element);
+    }
+});*/
+
+console.log(array_odd_two);
 
 
 
